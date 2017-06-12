@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.ddda.drinkinghippo.hippo">
 
     <Button
-        android:layout_width="309dp"
-        android:layout_height="137dp"
+        android:id="@+id/button1"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -25,21 +27,21 @@
         tools:layout_constraintRight_creator="1" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="135dp"
-        android:layout_height="180dp"
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="onButton2Clicked"
         android:text="물마시기"
         tools:layout_editor_absoluteX="38dp"
         tools:layout_editor_absoluteY="249dp" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="135dp"
-        android:layout_height="180dp"
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="onButton3Clicked"
         android:text="알람"
         tools:layout_editor_absoluteX="212dp"
         tools:layout_editor_absoluteY="249dp" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

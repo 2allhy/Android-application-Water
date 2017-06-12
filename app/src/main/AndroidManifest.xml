@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".drinkwater"/>
+        <activity android:name=".information"/>
+        <activity android:name=".alarm"/>
     </application>
 
 </manifest>
