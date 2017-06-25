@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ddda.drinkinghippo.hippo">
+    tools:context="com.example.ddda.drinkinghippo.hippo"
+    android:weightSum="1">
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="373dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="15dp"
+        android:textSize="35dp"
         android:onClick="onButton1Clicked"
         android:text="내정보"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,23 +26,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.136"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1" />
+        tools:layout_constraintRight_creator="1"
+        android:layout_weight="0.24" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="15dp"
+        android:textSize="35dp"
         android:onClick="onButton2Clicked"
         android:text="물마시기"
         tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="249dp" />
+        tools:layout_editor_absoluteY="249dp"
+        android:layout_weight="0.22" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.24"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="15dp"
+        android:textSize="35dp"
         android:onClick="onButton3Clicked"
-        android:text="알람"
+        android:text="성취도"
         tools:layout_editor_absoluteX="212dp"
         tools:layout_editor_absoluteY="249dp" />
 

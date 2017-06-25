@@ -6,36 +6,54 @@
     android:layout_height="match_parent"
     tools:context="com.example.ddda.drinkinghippo.hippo">
 
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation= "vertical"
+    tools:layout_editor_absoluteY="16dp"
+    tools:layout_editor_absoluteX="8dp"
+    tools:ignore="MissingConstraints">
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="이름을 입력하세요"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="나이를 입력하세요"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="60dp" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Age: "
+
+        android:hint="신장을 입력하세요"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="81dp" />
+        tools:layout_editor_absoluteY="110dp" />
 
     <EditText
         android:id="@+id/editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Height:"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="124dp" />
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Weight: "
+        android:hint="몸무게를 입력하세요"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="167dp" />
+        tools:layout_editor_absoluteY="162dp" />
 
     <Space
         android:layout_width="wrap_content"
@@ -43,14 +61,44 @@
         tools:layout_editor_absoluteX="145dp"
         tools:layout_editor_absoluteY="367dp" />
 
-    <EditText
-        android:id="@+id/editText7"
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="분석" />
+
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name:"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="35dp" />
+        android:text="BMI: "
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결과분석"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="하루 권장 물 섭취량"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+
+</LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
